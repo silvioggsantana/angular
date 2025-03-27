@@ -1,0 +1,13 @@
+<p>Olá {{name}}</p>
+
+<button [attr.aria.label]="id" (click)="submit()" >botão</button>
+
+@if(devemostrartitulo){
+    <h1> titulo true</h1>
+} @else {
+    <h1> titulo falso</h1>
+}
+
+@for(item of listItens; track item){
+    <p>{{item}}</p>
+}
